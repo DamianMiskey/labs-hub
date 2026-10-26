@@ -18,9 +18,9 @@ export const features: Feature[] = [
   { slug: "tailwind/dark-mode", name: "Dark mode & variants", category: "Foundations", phase: 2, ready: true,
     summary: "@custom-variant, data-* and aria-* variants, and a theme switch that respects the system." },
 
-  { slug: "tailwind/container-queries", name: "Container queries", category: "Layout", phase: 3, ready: false,
+  { slug: "tailwind/container-queries", name: "Container queries", category: "Layout", phase: 3, ready: true,
     summary: "Components that respond to their own width, not the screen's." },
-  { slug: "tailwind/fluid", name: "Fluid type & spacing", category: "Layout", phase: 3, ready: false,
+  { slug: "tailwind/fluid", name: "Fluid type & spacing", category: "Layout", phase: 3, ready: true,
     summary: "clamp() scales that grow smoothly between screen sizes." },
 
   { slug: "tailwind/modern-css", name: "Modern CSS", category: "Modern CSS", phase: 4, ready: false,
