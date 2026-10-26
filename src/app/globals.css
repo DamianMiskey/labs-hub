@@ -13,12 +13,6 @@
   --accent-ink: #075985; /* sky text: clears 4.5:1 on the surface and the code background */
   --code: #f1f0ec;
   --danger: #c0362c;
-  /* Chart series (the dataviz reference palette's first two slots, validated as a pair). */
-  --series-1: #2a78d6;
-  --series-2: #eb6834;
-  --series-3: #1baf7a;
-  --series-4: #eda100;
-  --series-5: #e87ba4;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
@@ -32,11 +26,6 @@
     --accent-ink: #38bdf8;
     --code: #232321;
     --danger: #ff7b6e;
-    --series-1: #3987e5;
-    --series-2: #d95926;
-    --series-3: #199e70;
-    --series-4: #c98500;
-    --series-5: #d55181;
     color-scheme: dark;
   }
 }
@@ -51,13 +40,6 @@
   --color-accent-ink: var(--accent-ink);
   --color-code: var(--code);
   --color-danger: var(--danger);
-  --color-series-1: var(--series-1);
-  --color-series-2: var(--series-2);
-  /* HTTP method colours, used by the request explorer. */
-  --color-get: #15803d;
-  --color-post: #1d4ed8;
-  --color-patch: #a16207;
-  --color-delete: #b91c1c;
   --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
 }
