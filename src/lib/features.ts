@@ -15,7 +15,7 @@ export type Feature = {
 export const features: Feature[] = [
   { slug: "tailwind/theme", name: "Design tokens", category: "Foundations", phase: 1, ready: true,
     summary: "@theme: colours, spacing and type as CSS variables, the design system this site runs on." },
-  { slug: "tailwind/dark-mode", name: "Dark mode & variants", category: "Foundations", phase: 2, ready: false,
+  { slug: "tailwind/dark-mode", name: "Dark mode & variants", category: "Foundations", phase: 2, ready: true,
     summary: "@custom-variant, data-* and aria-* variants, and a theme switch that respects the system." },
 
   { slug: "tailwind/container-queries", name: "Container queries", category: "Layout", phase: 3, ready: false,
