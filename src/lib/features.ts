@@ -23,7 +23,7 @@ export const features: Feature[] = [
   { slug: "tailwind/fluid", name: "Fluid type & spacing", category: "Layout", phase: 3, ready: true,
     summary: "clamp() scales that grow smoothly between screen sizes." },
 
-  { slug: "tailwind/modern-css", name: "Modern CSS", category: "Modern CSS", phase: 4, ready: false,
+  { slug: "tailwind/modern-css", name: "Modern CSS", category: "Modern CSS", phase: 4, ready: true,
     summary: ":has(), @starting-style, field-sizing and OKLCH colour mixing, through utilities." },
 
   { slug: "tailwind/utilities", name: "Custom utilities", category: "Extending", phase: 5, ready: false,
