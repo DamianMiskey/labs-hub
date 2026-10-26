@@ -24,7 +24,7 @@ export function fluidAt(f: Fluid, width: number) {
   return Math.min(f.max, Math.max(f.min, f.min + slopeOf(f) * (width - f.from)));
 }
 
-// This site's fluid tokens, as defined in globals.css (a test keeps the two in
+// This site's fluid tokens, as defined in @djmiskey/lab-tokens/tailwind.css (a test keeps the two in
 // step). Text grows 320 → 960px wide; that's a phone up to the content column.
 const range = { from: 320, to: 960 };
 export const fluidTokens: Record<string, Fluid> = {

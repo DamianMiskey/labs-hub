@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { categories, features } from "@/lib/features";
-import { ThemeSwitch } from "./ThemeSwitch";
+import { ThemeSwitch } from "@djmiskey/lab-tokens/ThemeSwitch";
 import { cx } from "./ui";
 
 // The sidebar is a Client Component so it can highlight the current page
