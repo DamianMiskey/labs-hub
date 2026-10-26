@@ -53,7 +53,7 @@ export default function FluidPage() {
 
       <CodePeek file="lib/fluid.ts" />
       <CodePeek file="app/tailwind/fluid/FluidPreview.tsx" />
-      <CodePeek file="app/globals.css" />
+      <CodePeek file="../node_modules/@djmiskey/lab-tokens/tailwind.css" />
     </FeaturePage>
   );
 }

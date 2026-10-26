@@ -53,9 +53,10 @@ export default function DarkModePage() {
         <div id="variants"><Variants /></div>
       </Demo>
 
-      <CodePeek file="lib/theme.ts" />
-      <CodePeek file="components/ThemeSwitch.tsx" />
-      <CodePeek file="app/globals.css" />
+      <CodePeek file="../node_modules/@djmiskey/lab-tokens/theme.ts" />
+      <CodePeek file="../node_modules/@djmiskey/lab-tokens/ThemeSwitch.tsx" />
+      <CodePeek file="../node_modules/@djmiskey/lab-tokens/tokens.css" />
+      <CodePeek file="../node_modules/@djmiskey/lab-tokens/tailwind.css" />
     </FeaturePage>
   );
 }

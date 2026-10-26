@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Nav } from "@/components/Nav";
 import { SITE_URL } from "@/lib/site";
-import { THEME_SCRIPT } from "@/lib/theme";
+import { THEME_SCRIPT } from "@djmiskey/lab-tokens/theme";
 import "./globals.css";
 
 export const metadata: Metadata = {

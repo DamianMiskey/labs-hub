@@ -45,6 +45,7 @@ export default function ThemePage() {
         <SpacingPlayground />
       </Demo>
 
+      <CodePeek file="../node_modules/@djmiskey/lab-tokens/tokens.css" />
       <CodePeek file="app/globals.css" />
       <CodePeek file="app/tailwind/theme/AccentPlayground.tsx" />
     </FeaturePage>

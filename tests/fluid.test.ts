@@ -20,7 +20,7 @@ describe("fluidClamp", () => {
 
 describe("the stylesheet's fluid tokens", () => {
   it("match what fluidClamp generates", () => {
-    const css = readFileSync(path.join(__dirname, "..", "src", "app", "globals.css"), "utf8");
+    const css = readFileSync(path.join(__dirname, "..", "node_modules", "@djmiskey", "lab-tokens", "tailwind.css"), "utf8");
     for (const [name, f] of Object.entries(fluidTokens)) {
       expect(css, name).toContain(`--${name}: ${fluidClamp(f)};`);
     }

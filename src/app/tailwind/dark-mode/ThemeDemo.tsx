@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ThemeSwitch } from "@/components/ThemeSwitch";
+import { ThemeSwitch } from "@djmiskey/lab-tokens/ThemeSwitch";
 
 // The site-wide switch, plus what it's doing right now.
 export function ThemeDemo() {
