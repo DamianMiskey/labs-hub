@@ -45,5 +45,5 @@ CI (`.github/workflows/ci.yml`) runs all of them on every pull request.
 - [x] **Phase 2: Dark mode & variants.** A site-wide System/Light/Dark switch (inline `<head>` script, no flash), `dark:` redefined with a block `@custom-variant` (with a no-JavaScript fallback), and aria/data/user-invalid/has/group state variants
 - [x] **Phase 3: Layout.** Container queries (a resizable card, the same card in two slots, named containers) and fluid type and spacing (`clamp()` tokens in `@theme` measured with `cqi`, a stepped-vs-fluid comparison, and a token generator)
 - [x] **Phase 4: Modern CSS.** `has-*:` (a plan picker, a CSS-only "all done" checklist), `starting:` entry and exit animations on a popover and a `<dialog>`, `field-sizing-content`, and colour mixing (sRGB vs OKLab vs OKLCH gradients, opacity modifiers, `oklch(from …)` tints)
-- [ ] **Phase 5: Extending.** `@utility`, `@variant`, typography for long text
+- [x] **Phase 5: Extending.** `@utility` (plain `scrollbar-hidden`; functional `fade-x-*` and `tab-*` with `--value()`), `@custom-variant hocus` and `@variant` inside a utility, and `@tailwindcss/typography` themed by the site tokens (`prose-site`)
 - [ ] **Later:** share the design tokens with the other labs

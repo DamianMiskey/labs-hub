@@ -26,7 +26,7 @@ export const features: Feature[] = [
   { slug: "tailwind/modern-css", name: "Modern CSS", category: "Modern CSS", phase: 4, ready: true,
     summary: ":has(), @starting-style, field-sizing and OKLCH colour mixing, through utilities." },
 
-  { slug: "tailwind/utilities", name: "Custom utilities", category: "Extending", phase: 5, ready: false,
+  { slug: "tailwind/utilities", name: "Custom utilities", category: "Extending", phase: 5, ready: true,
     summary: "@utility and @variant: extending Tailwind in CSS, plus typography for long text." },
 ];
 
