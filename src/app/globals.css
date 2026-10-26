@@ -15,18 +15,47 @@
   --danger: #c0362c;
   color-scheme: light;
 }
+/* Dark values. A data-theme attribute on <html> (set by the theme switch,
+   before the first paint) decides; without one (no JavaScript), the system
+   setting does. The same values appear twice because a selector can't sit
+   both inside and outside a media query. */
+:root[data-theme="dark"] {
+  --bg: #131312;
+  --surface: #1c1c1a;
+  --line: #2f2e2b;
+  --fg: #ecebe7;
+  --muted: #a09e97;
+  --accent: #0369a1; /* white text on it 5.9:1, and ≥ 3:1 against the dark backgrounds */
+  --accent-ink: #38bdf8;
+  --code: #232321;
+  --danger: #ff7b6e;
+  color-scheme: dark;
+}
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme]) {
     --bg: #131312;
     --surface: #1c1c1a;
     --line: #2f2e2b;
     --fg: #ecebe7;
     --muted: #a09e97;
-    --accent: #0369a1; /* white text on it 5.9:1, and ≥ 3:1 against the dark backgrounds */
+    --accent: #0369a1;
     --accent-ink: #38bdf8;
     --code: #232321;
     --danger: #ff7b6e;
     color-scheme: dark;
+  }
+}
+
+/* Tailwind's dark: variant, redefined to follow the theme switch, with the
+   same no-JavaScript fallback. @slot is where the utility's styles go. */
+@custom-variant dark {
+  &:where([data-theme="dark"], [data-theme="dark"] *) {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme]), :root:not([data-theme]) *) {
+      @slot;
+    }
   }
 }
 
