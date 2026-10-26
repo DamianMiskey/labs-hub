@@ -32,9 +32,14 @@ CI (`.github/workflows/ci.yml`) runs all of them on every pull request.
 | `src/lib/features.ts` | The Tailwind lab's pages (the roadmap) |
 | `src/app/tailwind/<slug>/page.tsx` | One page per Tailwind technique |
 
+## Notes
+
+- **Tokens** (`src/app/globals.css`): raw values in `:root`, swapped under `prefers-color-scheme: dark`; `@theme inline` maps them to Tailwind namespaces (`--color-*`, `--font-*`), so utilities read the variables and follow the scheme without `dark:` variants. Spacing is Tailwind's single `--spacing` (0.25rem): every `p-4`, `gap-3`, `m-2` is a multiple of it.
+- **Colour maths** (`src/lib/color.ts`, tested): OKLCH → sRGB (with a gamut flag) and WCAG contrast. Tailwind's own `sky-700`, `oklch(50% 0.134 242.749)`, is just outside sRGB (red −0.012 in linear light): wide-gamut screens show it as set, others clip it to `#0069a8`.
+
 ## Roadmap
 
-- [ ] **Phase 1: Design tokens.** `@theme`: the colours, spacing and type this site uses, as CSS variables
+- [x] **Phase 1: Design tokens.** `@theme`: this site's tokens read live from the page, an OKLCH accent playground with WCAG contrast grading (scoped to its box), and a `--spacing` slider
 - [ ] **Phase 2: Dark mode & variants.** `@custom-variant`, `data-*`/`aria-*` variants, a theme switch
 - [ ] **Phase 3: Layout.** Container queries; fluid type and spacing with `clamp()`
 - [ ] **Phase 4: Modern CSS.** `:has()`, `@starting-style`, `field-sizing`, OKLCH colour mixing
